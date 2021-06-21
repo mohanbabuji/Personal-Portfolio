@@ -27,11 +27,11 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
+    /* // toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
-    });
+    }); */
 
     // typing text animation script
     var typed = new Typed(".typing", {
@@ -47,7 +47,15 @@ $(document).ready(function(){
         backSpeed: 50,
         loop: true
     });
+    //Hamburger Manu
+    var navList = document.getElementById("menu");
+    function Show() {
+    navList.classList.add("_Menus-show");
+    }
 
+    function Hide(){
+    navList.classList.remove("_Menus-show");
+    }
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
