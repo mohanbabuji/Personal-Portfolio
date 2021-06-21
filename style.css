@@ -275,7 +275,7 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .Work{
+/* .services, .Work{
     color:#fff;
     background: #111;
 }
@@ -318,12 +318,12 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-}
+} */
 
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "Tools & Skills";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -384,13 +384,13 @@ section .title::after{
     width: 40%;
 }
 .skills-content .right .XD::before{
-    width: 40%;
+    width: 50%;
 }
 .skills-content .right .PS::before{
     width: 40%;
 }
 .skills-content .right .AI::before{
-    width: 40%;
+    width: 60%;
 }
 
 /* Work section styling */
