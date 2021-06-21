@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .Work, .contact, footer{
     font-family: 'Raleway', sans-serif;
 }
 .about .about-content,
@@ -273,16 +273,16 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .Work{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.Work .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.Work .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -327,29 +327,18 @@ section .title::after{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    
 }
 .skills .skills-content .left p{
     text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: #0094D3;
-    color: #fff;
     font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #0094D3;
-    transition: all 0.3s ease;
+    line-height: 1.5;
 }
-.skills .skills-content .left a:hover{
-    color: #0094D3;
-    background: none;
-}
+
+
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
@@ -384,20 +373,20 @@ section .title::after{
     width: 60%;
 }
 .skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
-    width: 70%;
+.skills-content .right .py::before{
+    width: 50%;
+}
+.skills-content .right .java::before{
+    width: 40%;
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
+/* Work section styling */
+.Work .title::after{
+    content: "works & projects";
 }
-.teams .carousel .card{
+.Work .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -405,25 +394,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.Work .carousel .card:hover{
     background: #0094D3;
 }
-.teams .carousel .card .box{
+.Work .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.Work .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.Work .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.Work .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -431,7 +420,7 @@ section .title::after{
     border: 5px solid #0094D3;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.Work .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
