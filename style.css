@@ -672,7 +672,7 @@ section .title::after{
     .menu-btn{
         display: block;
         color: white;
-        z-index: 999;
+        z-index: 10;
     }
      
     .menu-btn i.active:before{
@@ -691,6 +691,7 @@ section .title::after{
     }
     .navbar .menu.active{
         left: 0;
+        opacity: 90%;
     }
     .navbar .menu li{
         display: block;
@@ -698,7 +699,7 @@ section .title::after{
     .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
-        font-size: 25px;
+        font-size: 30px;
     }
     .home .home-content .text-2{
         font-size: 70px;
