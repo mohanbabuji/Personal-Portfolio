@@ -100,6 +100,8 @@ section .title::after{
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
+
+
 .navbar .logo i p{
     letter-spacing: 10px;
     padding-left: 10px;
@@ -108,11 +110,16 @@ section .title::after{
     transition: all 0.3s ease;
     color: black;
 }
-
+.navbar.sticky .logo i p{
+    color: white;
+}
+.navbar.sticky .logo i {
+    color: white;
+}
 .navbar .logo i {
    
     transition: all 0.3s ease;
-    color: black;
+    color:#111 ;
 }
 .navbar .logo i p:hover{
     letter-spacing: 10px;
@@ -120,14 +127,28 @@ section .title::after{
     display: inline-block;
     font-size: 20px;
     transition: all 0.3s ease;
-    color:  rgba(202, 109, 33, 0.705);
+    color:  #0094D3;
+  
+    
+}
+.navbar.sticky .logo i p:hover{
+ 
+    color:  #fff;
+    opacity: 68%;
+    
+}
+.navbar.sticky .logo i:hover{
+ 
+    color:  #fff;
+    opacity: 68%;
     
 }
 
 .navbar .logo i:hover {
    
     transition: all 0.3s ease;
-    color:  rgba(202, 109, 33, 0.705);
+    color:  #0094D3;
+    
 
 }
 .navbar .max-width{
@@ -194,11 +215,11 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
-    filter: drop-shadow(0 2px 5px black);
+    filter: drop-shadow(0 2px 5px rgba(3, 46, 102, 0.726));
     padding-top: 20px;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 50%;
 }
 .about .about-content .right .text{
     
@@ -219,7 +240,7 @@ section .title::after{
 }
 .fav .fav-content .right{
   text-align: end;
-    flex: 45%;
+    flex: 50%;
 }
 .fav .fav-content {
     display:flex;
@@ -234,25 +255,19 @@ section .title::after{
     width: 450px;
     object-fit: cover;
     border-radius: 6px;
-    filter: drop-shadow(0 2px 5px black);
+    filter: drop-shadow(0 2px 5px rgba(3, 46, 102, 0.726));
     
 }
 .fav .fav-content .left{
-    width: 55%;
+    width: 50%;
     margin-left: 0px;
     margin-top: auto;
-    flex: 55%;
+    flex: 50%;
 }
 .hobby{
     line-height: 1.5;
 }
-/* .fav .fav-content .left .text{
-    
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    
-} */
+
 
 .fav .fav-content .left p{
     text-align: justify;
@@ -277,7 +292,7 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
-    filter: drop-shadow(0 2px 5px black);
+    filter: drop-shadow(0 2px 5px rgba(3, 46, 102, 0.726));
     padding-top: 20px;
 }
 .edu .edu-content .right{
@@ -301,13 +316,18 @@ section .title::after{
     background: #111;
     padding: 15px 23px;
     color: #fff;
-    
-    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+.footer span{
+    color: #c6dde7;
+    font-weight: 600;
 }
 .footer span a{
     color: #0094D3;
     text-decoration: none;
-   
+   font-weight: 600;
 }
 .footer span a:hover{
     text-decoration: underline;
@@ -315,15 +335,10 @@ section .title::after{
 .SocialIcons i{
     display: inline-flexbox;
     justify-content: space-between;
-    font-size: 22px; 
+    font-size: 35px; 
+    
     color: #c6dde7;
 }
-
-.SocialIcons i:hover{
-    color: #0094D3;
-    opacity: 90%;  
-}
-
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -339,35 +354,7 @@ section .title::after{
     }
 }
 @media (max-width: 947px){
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{
-        left: 0;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
+    
     
     .max-width{
         max-width: 930px;
@@ -378,9 +365,22 @@ section .title::after{
     .about .about-content .left{
         display: flex;
         justify-content: center;
-        margin: 0 auto 60px;
+        margin: 0 auto 50px;
     }
     .about .about-content .right{
+        flex: 100%;
+    }
+    
+    .fav .fav-content .column{
+        width: 100%;
+    }
+    .fav .fav-content .right{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 10px;
+        padding-top: 50px;
+    }
+    .fav .fav-content .left{
         flex: 100%;
     }
     

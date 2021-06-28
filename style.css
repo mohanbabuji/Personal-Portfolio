@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .Work, .contact, footer{
+.about,  .skills, .Work, .contact, footer{
     font-family: 'Raleway', sans-serif;
 }
 .about .about-content,
@@ -81,15 +81,81 @@ section .title::after{
 /* navbar styling */
 .navbar{
     position: fixed;
-    margin: auto;
-    width:100%;
-    z-index: 10;
-    padding: 30px 0;
+    width: 100%;
+    z-index: 999;
+    padding: 5px 0;
+    
     font-family: 'EB Garamond', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 7px 0;
+    background: #0094D3;
+}
+.navbar .max-width{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 33px;
+    font-weight: 800;
+    
+    
+}
+
+.navbar .logo a span{
+    color: #0094D3;
+    transition: all 0.3s ease;
+}
+.navbar .logo a span:hover{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+   
+}
+.navbar.sticky .logo a span:hover{
+    color: #fff;
+    opacity: 68%;
+    
+    
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;    
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #0094D3;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+    opacity: 68%;
+}
+/* 
+.navbar{
+    
+    position: fixed;
+    
+    width:100%;
+    z-index: 999;
+    padding: 20px 0;
+    font-family: 'EB Garamond', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 3px 0;
     background: #0094D3;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -99,34 +165,28 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo img{
-    
-    position: fixed;
-    width: 100%;
-   height: 60px;
-    font-weight: 700;
-    opacity: 100%;
+.navbar .logo a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
 }
-.navbar.sticky .logo img{
-    width: 120px;
-    margin-top: -63px;
+.navbar.sticky .logo a{
+    
     opacity: 90%;
 }
-/*.navbar .logo a span{
-    color: #0094D3;
-    transition: all 0.2s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}*/
+
 .navbar .menu li{
     list-style: none;
-    display: inline-block;
+    display: inline-block; 
+    text-align: right;
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
     
+    color: #fff;
+    font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
@@ -138,15 +198,18 @@ section .title::after{
    
     color: #fff;
     opacity: 68%;
-}
+} */
 
-/* menu btn styling */
+
+ /* menu btn styling */
 .menu-btn{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
+    
 }
+
 .scroll-up-btn{
     position: fixed;
     height: 45px;
@@ -240,7 +303,7 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;  
-    filter: drop-shadow(0 2px 5px black);
+    filter: drop-shadow(0 2px 5px rgba(3, 46, 102, 0.726));
     padding-top: 20px;
 }
 .about .about-content .right{
@@ -273,9 +336,7 @@ section .title::after{
     color: #0094D3;
     background: none;
 }
-
-/* services section styling */
-/* .services, .Work{
+.services, .Work{
     color:#fff;
     background: #111;
 }
@@ -288,6 +349,8 @@ section .title::after{
     background: #111;
     content: "what i provide";
 }
+/* services section styling */
+/* 
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -395,7 +458,7 @@ section .title::after{
 
 /* Work section styling */
 .Work .title::after{
-    content: "works & projects";
+    content: "projects";
 }
 .Work .carousel .card{
     background: #222;
@@ -419,9 +482,14 @@ section .title::after{
     transform: scale(1.05);
 }
 .Work .carousel .card .text{
+    color: white;
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.Work .carousel .card p{
+    color: white;
+ 
 }
 .Work .carousel .card img{
     height: 150px;
@@ -556,13 +624,18 @@ section .title::after{
     background: #111;
     padding: 15px 23px;
     color: #fff;
-    
-    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+.footer span{
+    color: #c6dde7;
+    font-weight: 600;
 }
 .footer span a{
     color: #0094D3;
     text-decoration: none;
-   
+   font-weight: 600;
 }
 .footer span a:hover{
     text-decoration: underline;
@@ -570,7 +643,8 @@ section .title::after{
 .SocialIcons i{
     display: inline-flexbox;
     justify-content: space-between;
-    font-size: 22px; 
+    font-size: 35px; 
+    
     color: #c6dde7;
 }
 
@@ -578,19 +652,7 @@ section .title::after{
     color: #0094D3;
     opacity: 90%;  
 }
-/* .Footer{
-    background: #111;
-    padding: 15px 23px;
-    color: #fff;
-    text-align: right;
-}
-.Footer span a{
-    color: #0094D3;
-    text-decoration: none;
-}
-.Footer span a:hover{
-    text-decoration: underline;
-} */
+
 
 
 /* responsive media query start */
@@ -609,8 +671,10 @@ section .title::after{
 @media (max-width: 947px){
     .menu-btn{
         display: block;
-        z-index: 10;
+        color: white;
+        z-index: 999;
     }
+     
     .menu-btn i.active:before{
         content: "\f00d";
     }
@@ -660,10 +724,7 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
+   
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -684,9 +745,7 @@ section .title::after{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
-        width: 100%;
-    }
+   
 }
 
 @media (max-width: 500px) {
