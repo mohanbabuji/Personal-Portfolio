@@ -233,7 +233,7 @@ section .title::after{
     float: right;
     transform: translateY(40px);
     text-decoration: none;
-    
+    margin-bottom: 20px;
 }
 .work .work-content .fullwork a{
     color: #0094D3;  
@@ -298,11 +298,12 @@ section .title::after{
     float: right;
     transform: translateY(40px);
     text-decoration: none;
-    
+    margin-bottom: 20px;
 }
 .personal .personal-content .fullwork a{
     color: #0094D3;  
     font-weight: 500;
+    
 }
 .personal .personal-content .fullwork a:hover{
     background: #0094D3;
@@ -312,45 +313,10 @@ section .title::after{
 }
 .personal .personal-content .fullwork i{
    padding: 5px;
-}
 
-/* fav section styling */
-.fav .title::after{
-    content: "Hobbies";
-    letter-spacing: 2px;
-}
-.fav .fav-content .right{
-    margin-top: 10px;
-    text-align: right;
-    flex: 50%;
-}
-.fav .fav-content {
-    display:flex;   
-   justify-content: space-evenly;    
-}
-.fav .fav-content .right img{
-    
-    height: 450px;
-    width: 450px;
-    object-fit: cover;
-    border-radius: 6px;
-    filter: drop-shadow(0 2px 5px rgba(3, 46, 102, 0.726));
-    
-}
-.fav .fav-content .left{
-    width: 50%;
-    margin-left: 0px;
-    margin-top: auto;
-    flex: 50%;
-}
-.hobby{
-    line-height: 1.5;
 }
 
 
-.fav .fav-content .left p{
-    text-align: justify;
-}
 
 /* footer section styling */
 .footer{
@@ -389,8 +355,12 @@ section .title::after{
 
 
 /* responsive media query start */
-/* @media (max-width: 1104px) {
+@media (max-width: 1104px) {
     .work .work-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+    .personal .personal-content .left img{
         height: 350px;
         width: 350px;
     }
@@ -415,27 +385,31 @@ section .title::after{
         justify-content: center;
         margin: 0 auto 50px;
     }
-    .work .work-content .right{
+    .work .personal-content .right{
+        flex: 100%;
+    }
+    .personal .personal-content .column{
+        width: 100%;
+    }
+    .personal .personal-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 50px;
+    }
+    .personal .personal-content .right{
         flex: 100%;
     }
     
-    .fav .fav-content .column{
-        width: 100%;
-    }
-    .fav .fav-content .right{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 10px;
-        padding-top: 50px;
-    }
-    .fav .fav-content .left{
-        flex: 100%;
-    }
+    
     
 }
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
+    }
+    .SocialIcons i{
+        font-size: 30px;
+        padding: 2px;
     }
     
 }
@@ -454,5 +428,8 @@ section .title::after{
         font-size: 23px;
         line-height: 38px;
     }
+    .SocialIcons i{
+        font-size: 25px;
+        padding: 1px;
+    }
 }
- */
