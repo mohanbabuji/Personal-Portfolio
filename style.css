@@ -494,6 +494,7 @@ section .title::after{
     color: #0094D3;
     font-size: 20px;
     float: right;
+    margin-top: 30px;
 }
 .next a:hover{
     
@@ -638,6 +639,10 @@ section .title::after{
         height: 350px;
         width: 350px;
     }
+    .SocialIcons i{
+        font-size: 35px;
+        padding: 2px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -708,6 +713,10 @@ section .title::after{
         width: 100%;
         margin-bottom: 35px;
     }
+    .SocialIcons i{
+        font-size: 35px;
+        padding: 2px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -722,6 +731,10 @@ section .title::after{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .SocialIcons i{
+        font-size: 30px;
+        padding: 2px;
     }
    
 }
@@ -754,5 +767,9 @@ section .title::after{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    .SocialIcons i{
+        font-size: 25px;
+        padding: 1px;
     }
 }
