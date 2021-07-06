@@ -340,7 +340,7 @@ section .title::after{
   }
   
   /* Add arrows to the left container (pointing right) */
-  .left::before {
+ .timeline .left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -354,7 +354,7 @@ section .title::after{
   }
   
   /* Add arrows to the right container (pointing left) */
-  .right::before {
+  .timeline .right::before {
     content: " ";
     height: 0;
     position: absolute;
