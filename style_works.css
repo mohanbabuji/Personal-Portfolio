@@ -251,7 +251,7 @@ section .title::after{
 
 /* personal work section styling */
 .personal .title::after{
-    content: "professional";
+    content: "personal";
     letter-spacing: 1px;
 }
 
@@ -358,14 +358,34 @@ section .title::after{
 @media (max-width: 1104px) {
     .work .work-content .left img{
         height: 350px;
-        width: 350px;
+        width: 350px; 
+        margin-top: 50px;
     }
+    .work-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .work-content {
+        border-top: 2px solid #0094D3;
+        
+}
     .personal .personal-content .left img{
         height: 350px;
         width: 350px;
+        margin-top: 50px;
+        
     }
+    .personal-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 }
-
+    .personal-content {
+        border-top: 2px solid #0094D3;
+        
+}
+}
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -427,6 +447,30 @@ section .title::after{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    
+    .SocialIcons i{
+        font-size: 25px;
+        padding: 1px;
+    }
+}
+@media (max-width: 400px) {
+    
+    .work .work-content .right .text
+    {
+        font-size: 19px;
+    }
+    
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .footer{
+        width: 400px;
     }
     .SocialIcons i{
         font-size: 25px;
